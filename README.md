@@ -1,12 +1,12 @@
 # World Cup
-## [Certificate] - [FreeCodeCamp] - [Relational Database]
+### [certificate] - [freeCodeCamp] - [relational database]
 
 ![image](https://github.com/user-attachments/assets/229791c1-7122-400d-8509-fad9ba020bda)
 
-## Submission
+# Submission
 ![image](https://github.com/user-attachments/assets/149f564a-4bd8-4e79-a2d9-a31546d3cdb0)
 
-## Instructions
+# Instructions
 Follow the instructions and get all the user stories below to pass to finish the project.
 
 You start with several files, one of them is games.csv. It contains a comma-separated list of all games of the final three rounds of the World Cup tournament since 2014; the titles are at the top. It includes the year of each game, the round of the game, the winner, their opponent, and the number of goals each team scored. You need to do three things for this project:
