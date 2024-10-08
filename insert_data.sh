@@ -36,6 +36,7 @@ while IFS="," read YEAR ROUND WINNER OPPONENT WINNER_GOALS OPPONENT_GOALS; do
       OPPONENT_ID=$($PSQL "SELECT team_id FROM teams WHERE name='$OPPONENT'")
     fi
 
+    # insert data into games table
     INSERT_GAME=$($PSQL "INSERT INTO games(year, round, winner_id, opponent_id, winner_goals, opponent_goals)
     VALUES($YEAR, '$ROUND', $WINNER_ID, $OPPONENT_ID, $WINNER_GOALS, $OPPONENT_GOALS)")
     if [[ $INSERT_GAME = "INSERT 0 1" ]]; then
@@ -43,3 +44,7 @@ while IFS="," read YEAR ROUND WINNER OPPONENT WINNER_GOALS OPPONENT_GOALS; do
     fi
   fi
 done
+
+# hint :
+# when inserting data, we should insert data into child table before inserting data into parent table 
+# in this database, games is parent table, teams is child table
