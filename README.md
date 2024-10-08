@@ -1,4 +1,4 @@
-# World Cup
+# World-Cup
 ### [certificate] - [freeCodeCamp] - [relational database]
 
 ![image](https://github.com/user-attachments/assets/229791c1-7122-400d-8509-fad9ba020bda)
