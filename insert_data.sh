@@ -9,7 +9,7 @@ fi
 # clear data from tables
 echo "$($PSQL "TRUNCATE TABLE games, teams")"
 
-# function to insert a new winner if not already present
+# insert a new winner if not already present
 insert_winner() {
   local WINNER=$1
   local WINNER_ID=$($PSQL "SELECT team_id FROM teams WHERE name='$WINNER'")
@@ -23,7 +23,7 @@ insert_winner() {
   echo $WINNER_ID  # return the WINNER_ID
 }
 
-# function to insert a new opponent if not already present
+# insert a new opponent if not already present
 insert_opponent() {
   local OPPONENT=$1
   local OPPONENT_ID=$($PSQL "SELECT team_id FROM teams WHERE name='$OPPONENT'")
@@ -37,7 +37,7 @@ insert_opponent() {
   echo $OPPONENT_ID  # return the OPPONENT_ID
 }
 
-# function to insert game data
+# insert game data
 insert_game() {
   local GAME_YEAR=$1
   local GAME_ROUND=$2
