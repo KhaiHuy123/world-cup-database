@@ -51,4 +51,6 @@ done
 
 # When using the insert into command, we do not necessarily have to arrange the columns in the correct order in the table 
 # Just make sure each column receives the correct and meaningful data type and value
+# View worldcup.sql for more information about data model in worldcup database
+
 
